@@ -96,7 +96,7 @@ p3.then((y) => console.log(`p3: ${y}`)).catch(() =>
 
 Promise.all([p1,p2,p3]).then((values) => console.log(values));
 
-async functions
+// async functions
 async function somaAtrasada (a,b) { return a + b};
 console.log("Executando a função de somaAtrasada");
 
@@ -105,7 +105,7 @@ console.log(somaAtrasada(10,200));
 somaAtrasada(10,200).then((value)=> console.log(`O valor da soma é ${value}`));
 console.log("Conferindo que somaAtrasada é async");
 
-async await
+// async await
 function resolveAtrasado() {
   return new Promise((resolve) => {
     setTimeout(() => {}, resolve("Resolveu a promise"), 2000);
